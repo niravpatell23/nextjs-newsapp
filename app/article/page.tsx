@@ -1,3 +1,4 @@
+"use client";
 import { notFound } from "next/navigation";
 import LiveTimeStamp from "../LiveTimeStamp";
 
@@ -15,7 +16,7 @@ function ArticlePage({ searchParams }: Props) {
   }
   console.log("search " + searchParams);
   const article: Article = searchParams;
-  console.log("here i amagain " + article);
+  console.log("here i amagain " + article.title);
   return (
     <article>
       <section className="flex flex-col lg:flex-row pb-24 px-0 lg:px-10">
