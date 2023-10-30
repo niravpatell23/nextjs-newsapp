@@ -7,11 +7,12 @@ type Props = {
 };
 
 function ArticlePage({ searchParams }: Props) {
+  console.log("search paraams : " + JSON.stringify(searchParams));
   if (
     (searchParams && Object.entries(searchParams).length === 0) ||
     !searchParams
   ) {
-    console.log("here i am");
+    console.log("here i am at not found");
     return notFound();
   }
   console.log("search " + searchParams);
